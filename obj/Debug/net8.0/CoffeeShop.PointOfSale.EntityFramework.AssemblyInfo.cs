@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CoffeeShop.PointOfSale.EntityFramework")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c8b27759ae79a341aa5dfe8b9c019f7af15b402")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70c7ba1e942c5038e98f940e381f6fa87e935620")]
 [assembly: System.Reflection.AssemblyProductAttribute("CoffeeShop.PointOfSale.EntityFramework")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CoffeeShop.PointOfSale.EntityFramework")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

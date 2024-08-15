@@ -6,6 +6,7 @@ namespace CoffeeShop.PointOfSale.EntityFramework
         {
             ManageCategories,
             ManageProducts,
+            ManageOrders,
             Quit
         }
 
@@ -29,5 +30,10 @@ namespace CoffeeShop.PointOfSale.EntityFramework
             GoBack
         }
 
+        internal enum OrderMenu
+        {
+            AddOrder,
+            GoBack
+        }
     }
 }

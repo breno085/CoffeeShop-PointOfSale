@@ -19,6 +19,7 @@ static internal class UserInterface
             .AddChoices(
                 MainMenuOptions.ManageCategories,
                 MainMenuOptions.ManageProducts,
+                MainMenuOptions.ManageOrders,
                 MainMenuOptions.Quit
             )
         );
@@ -30,6 +31,9 @@ static internal class UserInterface
                     break;
                 case MainMenuOptions.ManageProducts:
                     ProductsMenu();
+                    break;
+                case MainMenuOptions.ManageOrders:
+                    OrdersMenu();
                     break;
                 case MainMenuOptions.Quit:
                     Console.WriteLine("Good bye!");
@@ -121,6 +125,33 @@ static internal class UserInterface
                     break;
                 case ProductMenu.GoBack:
                     MainMenu();
+                    break;
+            }
+        }
+    }
+
+    internal static void OrdersMenu()
+    {
+        bool isOrderMenuRunning = true;
+
+        while (isOrderMenuRunning)
+        {
+            var option = AnsiConsole.Prompt(
+            new SelectionPrompt<OrderMenu>()
+            .Title("OrdersMenu")
+            .AddChoices(
+                OrderMenu.AddOrder,
+                OrderMenu.GoBack
+            )
+        );
+
+            switch (option)
+            {
+                case OrderMenu.AddOrder:
+                    OrderService.InsertOrder();
+                    break;
+                case OrderMenu.GoBack:
+                    isOrderMenuRunning = false;
                     break;
             }
         }
