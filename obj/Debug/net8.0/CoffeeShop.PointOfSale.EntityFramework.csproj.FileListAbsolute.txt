@@ -122,3 +122,8 @@
 /home/brenoacioli/Documents/CoffeeShop.PointOfSale.EntityFramework/bin/Debug/net8.0/runtimes/win-x64/native/e_sqlite3.dll
 /home/brenoacioli/Documents/CoffeeShop.PointOfSale.EntityFramework/bin/Debug/net8.0/runtimes/win-x86/native/e_sqlite3.dll
 /home/brenoacioli/Documents/CoffeeShop.PointOfSale.EntityFramework/obj/Debug/net8.0/CoffeeShop.PointOfSale.EntityFramework.sourcelink.json
+/home/brenoacioli/Documents/CoffeeShop.PointOfSale.EntityFramework/bin/Debug/net8.0/Microsoft.Extensions.Configuration.dll
+/home/brenoacioli/Documents/CoffeeShop.PointOfSale.EntityFramework/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Binder.dll
+/home/brenoacioli/Documents/CoffeeShop.PointOfSale.EntityFramework/bin/Debug/net8.0/Microsoft.Extensions.Logging.Configuration.dll
+/home/brenoacioli/Documents/CoffeeShop.PointOfSale.EntityFramework/bin/Debug/net8.0/Microsoft.Extensions.Logging.Console.dll
+/home/brenoacioli/Documents/CoffeeShop.PointOfSale.EntityFramework/bin/Debug/net8.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll

@@ -57,6 +57,10 @@
               "target": "Package",
               "version": "[8.0.7, )"
             },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Spectre.Console": {
               "target": "Package",
               "version": "[0.49.2-preview.0.16, )"
