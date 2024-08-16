@@ -21,6 +21,7 @@ static internal class UserInterface
                 MainMenuOptions.ManageCategories,
                 MainMenuOptions.ManageProducts,
                 MainMenuOptions.ManageOrders,
+                MainMenuOptions.GenerateReport,
                 MainMenuOptions.Quit
             )
         );
@@ -35,6 +36,9 @@ static internal class UserInterface
                     break;
                 case MainMenuOptions.ManageOrders:
                     OrdersMenu();
+                    break;
+                case MainMenuOptions.GenerateReport:
+                    ReportService.CreateMonthlyReports();
                     break;
                 case MainMenuOptions.Quit:
                     Console.WriteLine("Good bye!");
@@ -309,5 +313,24 @@ static internal class UserInterface
         Console.WriteLine("Press Any Key to Return to Menu");
         Console.ReadLine();
         Console.Clear();
+    }
+
+    internal static void ShowReportByMonth(List<MonthlyReportDTO> report)
+    {
+        var table = new Table();
+        table.AddColumn("Month");
+        table.AddColumn("Total Quantity");
+        table.AddColumn("Total Sales");
+
+        foreach (var item in report)
+        {
+            table.AddRow(
+                item.Month,
+                item.TotalQuantity.ToString(),
+                item.TotalPrice.ToString()
+            );
+        }
+
+        AnsiConsole.Write(table);
     }
 }

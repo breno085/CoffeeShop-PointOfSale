@@ -7,6 +7,7 @@ namespace CoffeeShop.PointOfSale.EntityFramework
             ManageCategories,
             ManageProducts,
             ManageOrders,
+            GenerateReport,
             Quit
         }
 
