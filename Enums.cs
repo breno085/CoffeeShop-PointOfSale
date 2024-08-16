@@ -33,6 +33,8 @@ namespace CoffeeShop.PointOfSale.EntityFramework
         internal enum OrderMenu
         {
             AddOrder,
+            GetOrders,
+            GetOrder,
             GoBack
         }
     }
